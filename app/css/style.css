@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 10vw;
+    height: 100vh;
+    background: url('../img/sky.jpg');
+    overflow: hidden;
+}
+
+.wrapper{
+    top: 45vh;
+    left: 45vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.planet{
+    position: absolute;
+}
+
+.sun{
+    width: 50px;
+    animation: sun 13s linear infinite
+}
+
+@keyframes sun {
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+
+.mercury{
+    width: 10px;
+    animation: mercury 1.5s linear infinite;
+}
+
+@keyframes mercury{
+    0%{ transform: rotate(0deg) translateX(50px) }
+    100%{  transform: rotate(360deg) translateX(50px)}
+}
+
+.venus{
+    animation: venus 3s linear infinite;
+    width: 15px;
+}
+
+@keyframes venus{
+    0%{ transform: rotate(0deg) translateX(100px) }
+    100%{  transform: rotate(360deg) translateX(100px)}
+}
+
+.earth{
+    width: 15px;
+    animation: earth 4s linear infinite;
+}
+
+@keyframes earth{
+    0%{ transform: rotate(0deg) translateX(150px) }
+    100%{  transform: rotate(360deg) translateX(150px)}
+}
+
+.mars{
+    animation: mars 5s linear infinite;
+    width: 11px;
+}
+
+@keyframes mars{
+    0%{ transform: rotate(0deg) translateX(200px) }
+    100%{  transform: rotate(360deg) translateX(200px)}
+}
+
+.jupiter{
+    animation: jupiter 6s linear infinite;
+    width: 30px;
+}
+
+@keyframes jupiter{
+    0%{ transform: rotate(0deg) translateX(250px) }
+    100%{  transform: rotate(360deg) translateX(250px)}
+}
+
+.saturn{
+    animation: saturn 7s linear infinite;
+    width: 70px;
+}
+
+@keyframes saturn{
+    0%{ transform: rotate(0deg) translateX(300px) }
+    100%{  transform: rotate(360deg) translateX(300px)}
+}
+
+.uran{
+    animation: uran 8s linear infinite;
+    width: 20px;
+}
+
+@keyframes uran{
+    0%{ transform: rotate(0deg) translateX(350px) }
+    100%{  transform: rotate(360deg) translateX(350px)}
+}
+
+.neptune{
+    animation: neptune 10s linear infinite;
+    width: 20px;
+}
+
+@keyframes neptune{
+    0%{ transform: rotate(0deg) translateX(400px) }
+    100%{  transform: rotate(360deg) translateX(400px)}
+}
+
+.rocket{
+    position: absolute;
+    visibility: hidden;
+    width: 30px;
+    animation: rocket1 6s linear;
+    animation-delay: 4s;
+}
+
+.voyager{
+    visibility: hidden;
+    width: 30px;
+    animation: rocket2 10s linear;
+    animation-delay: 8s;
+}
+
+.ufo{
+    position: absolute;
+    width: 30px;
+    animation: ufo 10s linear;
+    animation-delay: 4s;
+}
+
+@keyframes rocket1{
+    0%{ visibility: visible;display:block; transform: rotate(0deg) translateX(150px) }
+    100%{ display: none; transform: rotate(360deg) translateX(200px)}
+}
+
+@keyframes rocket2{
+    0%{ visibility: visible; display:block; transform: rotate(0deg) translateX(150px) }
+    100%{ display: none; transform: rotate(360deg) translateX(255px)}
+}
+
+@keyframes ufo {
+    0%{ transform: translateX(-100vw)}
+    100%{ transform: translateX(-150px)}
+}
